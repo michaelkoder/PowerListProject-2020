@@ -1,0 +1,51 @@
+SELECT list_0_actions_base.id,list_0_actions_base.cathId,list_0_actions_base.txt,list_0_users_actions.fav,list_0_users_actions.done 
+FROM list_0_users_actions 
+INNER JOIN list_0_actions_base 
+ON list_0_users_actions.action_id = list_0_actions_base.id 
+WHERE list_0_users_actions.user_id=2
+
+
+select count(*)
+from
+(
+  select count(SID) tot  -- add alias
+  from Test 
+  where Date = '2012-12-10' 
+  group by SID
+)
+
+une action = une catégorie d evenements 
+	> il faut savoir combien d evenements on a dans une catégorie 
+> Catégorie evenement dans la table > list_terms
+> evenements dans la table > list_em_events
+
+> Exemple de recherche 
+	> on a un evenement qui s'appel > evenement-avion (event_id : 18) ( 374: post_id )
+	> Catégorie de l'evenement : avion (id:63)	
+	
+> la page d'admin ou on vois le nombre de post par cat d events 
+	> dans la liste des cats d evenements > https://digikoder.com/0WORK/justdolist/wp-admin/edit-tags.php?taxonomy=event-categories&post_type=event
+		> url d'un lien de cat : https://digikoder.com/0WORK/justdolist/wp-admin/term.php?taxonomy=event-categories&tag_ID=63&post_type=event&wp_http_referer=%2F0WORK%2Fjustdolist%2Fwp-admin%2Fedit-tags.php%3Ftaxonomy%3Devent-categories%26post_type%3Devent
+
+
+> TROUVééééééé ! 
+	> pas simple mais ok 
+	> la table list_term_taxonomy > references les catégories 
+		> term id = id de la catégorie de base > 63 ici donc 
+			> term_taxonomy_id > nouvel id a prendre en compte pour rechercher les evenements qui lui sont associés dans la table > list_term_relationships < 
+	> dans la table > list_term_relationships > je cherche donc les elements rataché au term_taxonomy_id = à 66 > je trouve les elements 374 et 335 qui correspondent aux id de deux evenements effectivement ratachés à la bonne catégorie ! 
+
+	> il faut donc 
+		> récupérer l'id taxonomy correspondant a la catégorie ciblée 
+		> et avec cet id lister les elements correspondants dans la table > list_term_relationships
+		> a partir de la on aura le nombre d'evenements rattaché à cette dite catégorie 
+		
+>>>>>>
+Jme casse le cul a faire la requette pour avoir le nbr d events par action
+Mais j aurais du commencer par analyser la requette que j utilise pour charger les events attachés a une actions ! 
+Il suffit d utiliser la meme et compter le resultat ! Avec l’option des events a venir uniquement !
+
+
+
+
+

@@ -1,0 +1,53 @@
+
+<section class="todoBackground" id="appHomePage">
+
+
+<header  class="appPageHeader">
+		<h1>
+			Ma liste
+		</h1>
+</header>
+<section id="main">
+	
+		<div action="#" id="todo-form" ng-keyup="keyPress($event.keyCode)">
+			<input type="text" id="new-todo" auto-corrector="newtodo" placeholder="{{placeholder}}" autocomplete="off" ng-model="newtodo" class="form-control">
+	
+			<div id="autoCompleteResults" ng-show="autoCompleteShow()">
+				<ul>
+					<li ng-repeat="act in autoCompleteList | filter:autoCompleteFilter(newtodo) | orderBy:'txt' track by $index" ng-click="autoCompleteSelect(act.txt)">
+						{{act.txt}}
+					</li>
+				</ul>
+	
+			</div>
+		</div>
+	<ul id="todo-list">
+			<li ng-repeat="todo in todos | filter:statusFilter | orderBy:'done' track by $index" ng-class="{completed:todo.done=='1'}" id="action_{{action.id}}" >
+				<div class="view">
+					<input type="checkbox" class="toggle" ng-click="actionStatusChange(todo.id)">
+					<a class="actionName" href="{{rootUrl}}#/actionPage/{{todo.cathId}}">{{todo.txt}}</a>
+					<button class="favBtn" ng-class="{favBtnOn:todo.fav=='1'}" ng-show="userIdent!=00" ng-click="actionFavChange(todo.id)" title="Mettre en Favoris"></button>
+					<a class="actionBtn" href="{{rootUrl}}#/actionPage/{{todo.cathId}}" title="Nombre de personnes interessées (cliquez pour participer)" >0</a>
+					<button class="destroy" ng-click="removeTodo(todo.id)"></button>
+				</div>
+			</li> 	
+		</ul>
+    <div>
+        <a href="#" class="btn btn-primary custom-button red-btn">Sauvegarder la liste (inscription)</a>
+        <a href="#" onclick="shareFacebook()"  class="btn btn-primary custom-button red-btn">Partager ! </a>
+    </div>
+   
+</section>
+<footer id="footer">
+    <span id="todo-count">
+				<strong>{{remaining}}</strong> Tâches restantes
+	</span>
+    <ul id="filters">
+        <li><a href="#/" ng-class="{selected:location.path()=='/all'}">Toutes</a></li>
+        <li><a href="#/active" ng-class="{selected:location.path()=='/active'}">Active</a></li>
+        <li><a href="#/done" ng-class="{selected:location.path()=='/done'}">Finit</a></li>
+    </ul>
+</footer>
+</section>
+    
+    

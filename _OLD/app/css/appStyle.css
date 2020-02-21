@@ -1,0 +1,919 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body .content-area .entry-header {
+    height: 31px;
+    overflow: visible;
+}
+
+
+.entry-title:before,
+.entry-title:after {
+    background: none;
+}
+
+.event-extra-details
+{
+	display:none;
+}
+
+body .entry-title, .comment-form-social-connect, body .fb_iframe_widget span {
+    text-align: center;
+    font-size: 50px;
+    line-height: 12px;
+    text-shadow: 2px -2px #555555;
+    position: relative;
+    top: -24px;
+    width: 90%;
+    left: 5%;
+    display: block;
+    color: #FFF;
+}
+
+.backBtn {
+    background-image: url(../images/fleche.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 10%;
+    background-position: 8px;
+    float: left;
+    padding: 8px 0 20px 20px;
+    z-index: 999;
+}
+#todoappBox .event-categories{display:none;}
+
+
+.todoBackground ul,
+.todoBackground ol {
+    margin: 0;
+}
+
+.todoBackground li {
+    list-style-type: none;
+}
+
+.usersList ul {
+    border-top: 1px solid;
+}
+
+.usersList li {
+    display: table;
+    border-bottom: 1px solid;
+    width: 100%;
+    padding: 3px 0 3px 5px;
+}
+
+.usersList li div {
+    display: table-cell;
+}
+
+.header-content-wrap {
+     min-height: 710px;
+}
+
+.whiteColor {
+    color: #FFFFFF;
+}
+
+#appHomePage button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+    color: inherit;
+    -webkit-appearance: none;
+    /*-moz-appearance: none;*/
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.topListBox {
+    width: 50%;
+    float: left;
+    padding-bottom: 20px;
+    border-right: 1px solid;
+    border-bottom: 3px solid;
+    min-height: 275px;
+}
+
+.topListBoxFull {
+    border: none;
+    width: 100%;
+    min-height: 275px;
+}
+
+#actionPageEvent .usersList {
+    min-height: 365px;
+    width: 30%;
+    float: left;
+    border-right: 1px solid;
+}
+
+#actionPageEvent .eventInfos {
+    width: 70%;
+    float: left;
+    border-bottom: 1px solid;
+    min-height: 120px;
+}
+
+#actionPageEvent .eventPhotos {
+    width: 25%;
+    float: left;
+    border-right: 1px solid;
+    min-height: 245px;
+}
+
+#actionPageEvent .eventChatRoom h2 {
+    font-size: 20px;
+    display: inline-table;
+}
+
+#actionPageEvent .eventPhotos h2 {
+    font-size: 20px;
+    display: inline-table;
+}
+
+#actionPageEvent .eventChatRoom {
+    width: 45%;
+    float: left;
+    min-height: 220px;
+}
+
+#appHomePageBox {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background-color: eaeaea;
+    color: #4d4d4d;
+    width: 80%;
+    min-width: 540px;
+    margin: 30px auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+.todoBackground {
+    background: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    height: auto;
+    border-radius: 3px;
+    display: inline-block;
+    min-height: 300px;
+    min-width: 700px;
+}
+
+#appHomePage .custom-button {
+    padding: 6px 20px 6px 20px;
+}
+
+.appPageHeader {
+    background: #555555;
+    color: #f5f5f5;
+    background: #8d7d77;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(132, 110, 100, 0.8)), to(rgba(101, 84, 76, 0.8)));
+    background: -webkit-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+    background: -moz-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+    background: -o-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+    background: -ms-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+    background: linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#9d8b83', EndColorStr='#847670');
+    height: 31px;
+}
+
+.createEventForm {
+    width: 40%;
+    border-right: 1px solid;
+    float: left;
+    min-height: 170px;
+    padding: 10px 0 0 0;
+}
+
+.createEventForm label {
+    float: left;
+    width: 30%;
+    text-align: right;
+    display: block;
+    margin: 0 0px 0 0;
+    min-width: 103px;
+}
+
+.createEventForm input[type="text"] {
+    padding: 0;
+    margin: 2px 0 2px 0px;
+}
+
+.createEventForm input[type="button"] {
+    float: left;
+    padding: 3px 15px 3px 15px;
+    letter-spacing: 5px;
+}
+
+.createEventPhotos {
+    min-height: 170px;
+}
+
+.createEventSearchBox {
+    width: 70%;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    float: left;
+    min-height: 220px;
+}
+
+.createEventPubs {
+    width: 30%;
+    float: left;
+    border-top: 1px solid;
+    min-height: 220px;
+}
+
+.appPageHeader h1 {
+    font-size: 50px;
+    line-height: 12px;
+    text-shadow: 2px -2px #555555;
+    position: relative;
+    top: -24px;
+    width: 90%;
+    left: 5%;
+    display: block;
+}
+
+#appHomePage .appPageHeader h1 {
+    top: 6px;
+}
+
+.actionsList li .seeMore {
+    position: relative;
+    text-decoration: underline;
+    top: 8px;
+    color: #e96656;
+}
+
+.actionsList {}
+
+.actionsList .actionCounter {}
+
+.actionsList li a,
+.actionsList li div {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.listItemName {
+    width: 85%;
+    text-align: left;
+}
+
+#topActionsPage .listItemName {
+    width: 92%;
+}
+
+.topActionHeaderDiv {
+    display: table;
+    border-bottom: 1px solid;
+    width: 100%;
+}
+
+header .topActionHeaderDiv div {
+    display: inline-table;
+}
+
+.todoBackground header .topActionHeaderDiv .appBtn {
+    float: right;
+    margin: 5px 5px 5px 0;
+    color: #FFF;
+}
+
+.todoBackground header .topActionHeaderDiv .appBtn:hover {
+    cursor: pointer;
+    color: #e96656;
+}
+
+#actionPageEvent .roundBox,
+#actionPageEvent .appBtn {
+    margin-top: 8px;
+}
+
+.todoBackground header .title {
+    float: left;
+    padding: 6px 0 0px 10px;
+    font-size: 22px;
+}
+
+.todoBackground header .actionsBtns {
+    float: right;
+    width: 195px;
+    margin: 5px 0px 5px 5px;
+}
+
+.todoBackground header .actionsBtns div {}
+
+.todoBackground header .actionsBtns .roundBox {
+    margin-left: 8px;
+    padding: 6px 0 0 0;
+}
+
+header .actionsBtns img {
+    padding: 0 5px;
+}
+
+.actionsBtns:hover {
+    cursor: pointer;
+}
+
+.roundBox {
+    width: 35px;
+    height: 35px;
+    background: #555555;
+    color: #FFF;
+    border-radius: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.todoBackground header .topactionHeaderTxt1 {
+    float: left;
+    margin: 9px 10px;
+}
+
+.todoBackground header .topactionHeaderTxt2 {
+    float: left;
+    margin: 8px 5px 5px 5px;
+}
+
+header .topactionHeaderTxt2 select {}
+
+.todoBackground .eventsList ul {
+    margin: 0;
+}
+
+.todoBackground .eventsList li {
+    list-style-type: none;
+    padding: 3px 7px;
+}
+
+.todoBackground .eventsList li div {
+    display: table-cell;
+}
+
+.todoBackground .eventsList li .roundBoxAvatar {}
+
+.todoBackground .eventsList li .roundBoxAvatar:hover {
+    cursor: pointer;
+}
+
+.todoBackground .eventsList li .userName {
+    padding: 7px 0 0 10px;
+}
+
+.todoBackground .eventsList li .eventDate {
+    padding: 7px 0 0 10px;
+}
+
+.todoBackground .eventsList li .eventDistance {
+    padding: 7px 0 0 10px;
+}
+
+.todoBackground .eventsList li .eventPrice {
+    padding: 0 0 0 10px;
+}
+
+.todoBackground .eventsList li .actionCounter {
+    float: right;
+    margin: -34px 4px 0 0;
+    color: #FFFFFF;
+}
+
+.todoBackground .eventsList li .actionCounter:hover {
+    color: #FF4242;
+}
+
+.todoBackground .topActionHeaderDiv .roundBox {
+    float: right;
+    margin: 5px 11px 5px 5px;
+}
+
+.todoBackground .roundBox:hover {
+    cursor: pointer;
+}
+
+.todoBackground .backBtn {
+    background-image: url('../images/fleche.png');
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 10%;
+    background-position: 8px;
+    float: left;
+    padding: 8px 0 20px 20px;
+    z-index: 999;
+}
+
+.appBtn {
+    background: #555555;
+    padding: 5px 8px;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+#appHomePage {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.97);
+    margin: 0px 0 70px 0;
+    border: 1px solid #ccc;
+    position: relative;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+#appHomePage:before {
+    content: '';
+    border-left: 1px solid #f5d6d6;
+    border-right: 1px solid #f5d6d6;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 100%;
+}
+
+#appHomePage input::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+#appHomePage input:-moz-placeholder {
+    font-style: italic;
+    color: #a9a9a9;
+}
+
+#appHomePage #header {
+    border-radius: inherit;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 15px;
+    height: 9px;
+}
+
+#appHomePage #header .navBarList ul {
+    margin: 0px;
+}
+
+#appHomePage #header .navBarList li a {
+    color: #FFF;
+}
+
+#appHomePage #header .navBarList li {
+    display: inline-block;
+    padding: 3px 9px;
+    color: #FFF;
+}
+
+#appHomePage #header .navBarList {
+    content: '';
+    position: relative;
+    top: -15px;
+    right: 0;
+    left: 0;
+    height: 15px;
+    z-index: 2;
+    border-bottom: 1px solid #6c615c;
+    background: #8d7d77;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(132, 110, 100, 0.8)), to(rgba(101, 84, 76, 0.8)));
+    background: -webkit-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+    background: -moz-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+    background: -o-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+    background: -ms-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+    background: linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#9d8b83', EndColorStr='#847670');
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+#appHomePage #new-todo {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-size: 24px;
+    font-family: inherit;
+    line-height: 1.4em;
+    border: 0;
+    outline: none;
+    color: inherit;
+    padding: 6px;
+    border: 1px solid #999;
+    box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+#appHomePage #new-todo {
+    padding: 19px 16px 21px 60px;
+    border: none;
+    background: rgba(0, 0, 0, 0.02);
+    z-index: 2;
+    box-shadow: none;
+}
+
+#appHomePage #main {
+    position: relative;
+    z-index: 2;
+    top: 0px;
+    min-height: 250px;
+}
+
+l#appHomePage abel[for='toggle-all'] {
+    display: none;
+}
+
+#appHomePage #toggle-all {
+    position: absolute;
+    top: -76px;
+    left: -15px;
+    width: 65px;
+    height: 41px;
+    text-align: center;
+    border: none;
+    /* Mobile Safari */
+    -webkit-appearance: none;
+    /*-moz-appearance: none;*/
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-transform: rotate(90deg);
+    /*-moz-transform: rotate(90deg);*/
+    -ms-transform: rotate(90deg);
+    /*-o-transform: rotate(90deg);*/
+    transform: rotate(90deg);
+}
+
+#appHomePage #toggle-all:before {
+    content: '>>';
+    font-size: 30px;
+    color: #e6e6e6;
+    font-family: monospace;
+    padding: 10px 27px 10px 27px;
+}
+
+#appHomePage #toggle-all:checked:before {
+    color: #737373;
+}
+
+#appHomePage #autoCompleteResults {
+    position: absolute;
+    background: #FFF;
+    z-index: 10;
+    border-left: 1px solid;
+    left: 40px;
+    width: 509px;
+    border-right: 1px solid;
+}
+
+#appHomePage #autoCompleteResults ul {
+    margin: 0;
+    padding: 0;
+}
+
+#appHomePage #autoCompleteResults ul li {
+    list-style-type: none;
+    font-size: 20px;
+    border-bottom: 1px solid;
+    line-height: 1.8;
+    padding-left: 18px;
+    font-style: italic;
+}
+
+#appHomePage #autoCompleteResults ul li:hover {
+    cursor: pointer;
+}
+
+#appHomePage #todo-form {
+    padding: 0;
+}
+
+#appHomePage #todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#appHomePage #todo-list li {
+    position: relative;
+    font-size: 24px;
+    border-bottom: 1px dotted #ccc;
+    text-align: left;
+}
+
+
+#appHomePage #todo-list li .toggle {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto -3px;
+    border: none;
+    outline: 0;
+    /* Mobile Safari */
+    -webkit-appearance: none;
+    /*-moz-appearance: none;*/
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+#appHomePage #todo-list li .toggle:after {
+    font-size: 18px;
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
+    line-height: 43px;
+    /* 40 + a couple of pixels visual adjustment */
+    font-size: 20px;
+    color: #d9d9d9;
+    text-shadow: 0 -1px 0 #bfbfbf;
+}
+
+#appHomePage #todo-list li.completed .toggle:after {
+    color: #85ada7;
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
+    text-shadow: 0 1px 0 #669991;
+    bottom: 1px;
+    position: relative;
+}
+
+#appHomePage #todo-list li .actionName {
+    word-break: break-word;
+    padding: 12px 0 10px 10px;
+    display: block;
+    line-height: 1.2;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+    margin: 2px 0 -4px 45px;
+    font-size: 24px;
+    color:#000000;
+}
+
+#appHomePage #todo-list li.completed label {
+    color: #a9a9a9;
+    text-decoration: line-through;
+}
+#appHomePage #todo-list li input:hover{
+	cursor:pointer;
+}
+
+#appHomePage #todo-list li .actionBtn {
+    position: absolute;
+    top: 0px;
+    right: 42px;
+    bottom: 0;
+    width: 28px;
+    height: 28px;
+    margin: auto 0;
+    font-size: 19px;
+    color: #ffffff;
+    background-color: #ff0000;
+    border-radius: 100px;
+    text-align: center;
+    padding: 0;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#appHomePage #todo-list li .actionBtn:last-child {
+    display: block;
+}
+
+#appHomePage .favBtn {
+    background-image: url('../images/star.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 34px;
+    width: 37px;
+    top: 7px;
+    right: 79px;
+}
+#appHomePage .favBtnOn {
+    background-image: url('../images/star2.png');
+}
+
+.bulleNotif {
+    height: 17px;
+    width: 17px;
+    background: #ffffff;
+    color: #d80000;
+    border-radius: 30px;
+    padding: 0px 0 0 2px;
+    font-size: 9px;
+    position: absolute;
+    top: 3px;
+    left: 24px;
+    border: 1px solid #333333;
+}
+
+#appHomePage #todo-list .destroy {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 6px;
+    bottom: 0;
+    width: 30px;
+    height: 40px;
+    margin: auto 0;
+    font-size: 25px;
+    color: #a88a8a;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    outline: none;
+}
+
+#appHomePage #todo-list li .destroy:hover {
+    text-shadow: 0 0 1px #000, 0 0 10px rgba(199, 107, 107, 0.8);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#appHomePage #todo-list li .destroy:after {
+    content: 'x';
+}
+
+#appHomePage #todo-list li:hover .destroy {
+    display: block;
+}
+
+
+#appHomePage #footer {
+    color: #777;
+    padding: 0 15px;
+    position: absolute;
+    right: 0;
+    bottom: -31px;
+    left: 0;
+    height: 20px;
+    z-index: 1;
+    text-align: center;
+    background: none;
+}
+
+#appHomePage #footer:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 31px;
+    left: 0;
+    height: 50px;
+    z-index: -1;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 6px 0 -3px rgba(255, 255, 255, 0.8), 0 7px 1px -3px rgba(0, 0, 0, 0.3), 0 43px 0 -6px rgba(255, 255, 255, 0.8), 0 44px 2px -6px rgba(0, 0, 0, 0.2);
+}
+
+#appHomePage #todo-count {
+    float: left;
+    text-align: left;
+}
+
+#appHomePage #filters {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+#appHomePage #filters li {
+    display: inline;
+}
+
+#appHomePage #filters li a {
+    color: #83756f;
+    margin: 2px;
+    text-decoration: none;
+}
+
+#appHomePage #filters li a.selected {
+    font-weight: bold;
+}
+
+#appHomePage #clear-completed {
+    float: right;
+    position: relative;
+    line-height: 20px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 11px;
+    padding: 0 10px;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+#appHomePage #clear-completed:hover {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+#appHomePage #info {
+    margin: 65px auto 0;
+    color: #a6a6a6;
+    font-size: 12px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+#appHomePage #info a {
+    color: inherit;
+}
+
+.eventInfos {}
+
+.eventInfos ul {}
+
+.eventInfos li {
+    text-align: left;
+    width: 100%;
+    padding: 0 0 0 10px;
+}
+
+.eventInfosName {}
+
+.eventInfosAdress {}
+
+.eventInfosAdress label {
+    float: left;
+}
+
+.eventInfosAdress span {
+    float: left;
+}
+
+.eventInfosDistance {}
+
+.eventInfosPrice {}
+
+.eventInfosDesc {}
+
+.eventInfosSite {}
+
+.usersList {}
+
+.listUserAvatar {
+    height: 10px;
+    width: 28px;
+    padding: 3px 0px 0 1px;
+}
+
+.listUserName {
+    padding: 0 5px;
+    max-width: 115px;
+}
+
+.listUserDistance {}
+
+.listUserRemove {}
+
+.closerBtn {
+    float: right;
+    height: 20px;
+    width: 20px;
+    background: #555555;
+    color: #FFF;
+    line-height: 20px;
+}
+
+
+
+
+#appHomePage .hidden {
+    display: none;
+}
+
+
+/*# sourceMappingURL=style.css.map */

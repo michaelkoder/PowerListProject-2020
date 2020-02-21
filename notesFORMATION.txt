@@ -1,0 +1,54 @@
+///// JAVASCRIPT > ENVIRONNEMENT DE DEV 
+    > initialiser un projet avec node en npm pour du javacsript 
+    >> https://medium.com/@sreejithezhakkad/how-to-start-a-web-app-project-using-bootstrap-with-npm-webpack-185e510a782e
+
+    >> aller dans le dossier du projet
+    > npm init
+    $ npm install webpack --save-dev
+    $ npm install webpack-cli --save-dev
+    $ npm install bootstrap jquery popper.js --save
+    $ npm install autoprefixer css-loader node-sass postcss-loader sass-loader style-loader --save-dev
+   
+    Créer fichier webpack.config.js
+   
+    const path = require('path');
+    module.exports = {
+    entry: './src/app.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+        {
+            test: /\.(scss)$/,
+            use: [
+            {
+                // Adds CSS to the DOM by injecting a `<style>` tag
+                loader: 'style-loader'
+            },
+            {
+                // Interprets `@import` and `url()` like `import/require()` and will resolve them
+                loader: 'css-loader'
+            },
+            {
+                // Loader for webpack to process CSS with PostCSS
+                loader: 'postcss-loader',
+                options: {
+                plugins: function () {
+                    return [
+                    require('autoprefixer')
+                    ];
+                }
+                }
+            },
+            {
+                // Loads a SASS/SCSS file and compiles it to CSS
+                loader: 'sass-loader'
+            }
+            ]
+        }
+        ]
+    }
+    };
+

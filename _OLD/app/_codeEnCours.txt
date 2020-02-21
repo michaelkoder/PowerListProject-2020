@@ -1,0 +1,13 @@
+>>>> REVOIR LE FICHIER > A FAIRE DANS LE DOSSIER DROPBOX ! 
+
+> quand on ajoute une tache a la liste de l utilisateur courant 
+	> ca ne lui met pas le bon lien > quand on click dessus ca recharge la page
+		> il faut ajouter la nouvelle action avec le bon lien ! 
+		
+> reprendre les recherche de requette sql pour calculer le nombre d'evenements par actions 
+	> complexe mais a étudier 
+	> REFLECHIR ! > compter les evenements futurs uniquement normalment ... pas les passés ! 
+	
+> re verifier le systeme de mots blacklistés 
+
+

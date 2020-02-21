@@ -1,0 +1,28 @@
+> carcassonne
+
+	> bonjour
+
+	> suite a réfléxion, je suis interessé par votre projet mais si je calcule : un fixe de 15000 euros au tarif que j'envisage ( 350 euros / jour ) ca représente un peut plus de 2 mois. N'ayant pas une bonne visibilitée sur la conception du projet je ne peut pas savoir si cela peut suffir d'autant qu'il faudra aussi compter du temps pour la conception.
+	Donc je pense que 2 mois ca fait trop court pour ce projet et pour ma part je cherche une collaboration de 4 mois environ.
+
+
+
+> mission lyon 
+	
+	> voici un prévisionnel plus précis pour votre projet 
+
+	> pour la maquette de base V1	
+		> juste integrer les maquettes graphiques en code pour avoir un apercu du rendu responsive (adapté a toute les tailles d'écrans) sans le back office ni les fonctionnalités > 2 semaines 
+
+	> pour la version 2 : 
+			> j'ai déja mis en place une plateforme de vente de formation en ligne avec wordpress, ce genre de plateforme inclu une série de fonctionnalités dont j'ai déja une idée assez précise . 
+			> si la conception est finalisée et qu'on parle d'une plateforme plutot basique avec un seul administrateur qui ajoute les formation ( dans certains cas il est prévu de permettre à plusieurs formateurs de s'inscrire sur la plateforme et de proposer leurs formations qui sont ensuite validées par un super administrateur et le paiement est réparti entre la plateforme et le formateur).
+			> je suis développeur et intégrateur web FRONT avant tous mais j'ai également des compétences BACK ( php, sql, création de base de donnée, creation d'interfaces de gestion administratives) . 
+			Je propose donc deux approches : 
+				> utiliser des outils comme wordpress et woocommerce pour proposer une solution plus fiable, sécurisée, facile à administrer et radide à mettre en place.
+				> développer la plateforme intégralement avec des outils de code pour faire du sur mesure tant niveau back office que front office ( une recherche serait à réaliser pour voir quels outils existent pour réaliser un back office)
+			> il faudrait compter 2 mois pour la premiere approche et je dirais 3 mois pour la seconde pour les étapes de développement de la plateforme ( sous reserve de la complexité du projet définie par les étapes de conception, un planning plus précis devras etre définit au début du projet pour avoir une meilleur visibilité sur ce point ). 
+			> si il est necessaire d'optimiser ou d'adapter la partie conception en fonction des objectifs du client je peut aider en ce sens avec plaisir, j'ai plusieurs experiences à mon actif sur la partie UI/UX.
+
+			
+

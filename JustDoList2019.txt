@@ -1,0 +1,127 @@
+ 
+
+
+
+> TODO 
+	> créer une base de donnée qui répond aux logiques de fonctionnement 
+	> créer la base de l'app avec angular derniere version et faire une version react 
+	> définir les logiques de fonctionnement 
+		> ajouter une nouvelle activité 
+			> elle doit etre dans la liste de suggestion 
+		> si elle est pas dans la liste de suggestion 
+			> elle doit etre filtré pour empécher les mots interdits 
+			> ne pas etre présente dans la liste de suggestion sous une autre orthographe 
+			> faire une page qui permet de voir la liste des activités et de les modifier ( renommer, blacklister,supprimer,)
+		> visiteur : liste enregistrée dans le storage > quand il s inscrit > on vérifie si y a une liste dans le storage si oui > alert pour proposer de récupérer la liste visiteur et l enregistrer 
+
+> PLAN TECHNIQUE 
+	> 1 > arriver a faire une todo list qui update une liste de tache dans une base de donnée
+	> 2 > ajouter les fonctionnalités de base de cette liste 
+	> 3 > implémenter le systeme de creation d'evenements associés aux actions 
+	> 4 > page profil 
+> RESSOURCES ANGULAR 
+	> TUTOS TODO LIST 
+		> https://www.sitepoint.com/angular-2-tutorial/ 
+		>> https://github.com/sitepoint-editors/angular-todo-app/tree/master/src/app
+
+	> BESOINS OUTILS ANGULAR 
+		> création d evenements > déja dans bootstrap 
+		> auto completion 
+			> https://ng-bootstrap.github.io/#/components/typeahead/examples 
+		> popin/popups > popper.js
+		> bootstrap 
+			doc > https://ng-bootstrap.github.io/#/getting-started
+				> https://valor-software.com/ngx-bootstrap/#/documentation
+			templates > https://getbootstrap.com/docs/4.0/examples/
+
+		> profil utilisateur 
+		> messagerie 
+		> tchat 
+		> carte 
+		> groupes utilisateurs 
+		> icones fontawesome-free > https://fontawesome.com/icons
+
+
+> ETUDE DE MARCHER 
+	> https://www.sportyapp.com
+	> https://rovo.co
+
+
+> ACCES 
+	> BDD 
+		> https://phpmyadmin.cluster010.hosting.ovh.net/index.php?pma_username=mistermitest&pma_servername=mistermitest.mysql.db
+		> pass > iochimi12
+		>> MODEL DE BASE DE DONNEE 
+			> users
+				> id,username,mail,pass,age, location, profession, description,status(registered,banned,login,logout),
+			> actionsBase
+				> id, name,cathid
+			> actionsBlackList
+				> id, actionBaseId
+			> actionCaths
+				> id, cath
+			> usersActions
+				> ip,userId,actionBaseId,userList,state,fav
+			> userLists
+				> id,name,userid,
+			> userMessages
+				> id,userIdFrom,userIdTo,message
+			> groupsList
+				> id, groupName,actionCathId
+			> groupsUsers
+				> id,groupListId,userId
+			> groupMessages
+				> id,groupListId,authorId,message
+			> groupsComments
+				> id,groupeListId,authorId,message
+			> userNotifications
+				> id, userId,text
+			> events
+				> id,date,title,desc,usersId,location,photo
+
+	>>> BASE SQL > http://localhost:8888/phpMyAdmin/db_designer.php?db=justdolist
+	> URL LOCALE SERVEUR PHP > http://justdolist:8888/php/
+	> ACTIONS SQL 
+		> créer une tache 
+			> créer dans la base actionsBase > on recupere l id
+				> INSERT INTO `actionsBase` (`id`, `name`, `cathid`) VALUES (NULL, 'match de foot', '2');
+			> créer ou associer l'action a la liste de l'utilisateur ( liste principale de base : 'generale')
+				> si elle existe pas on la crée 
+				> INSERT INTO `userLists` (`id`, `name`, `userId`) VALUES (NULL, 'generale', '888');
+				> si elle existe on recupere son id juste 
+			> avec l id de l action et l id de la liste action base on crée donc l'action dans la base usersActions
+				> INSERT INTO `usersActions` (`id`, `userId`, `actionBaseId`, `userListId`, `state`, `fav`) VALUES (NULL, '888', '888', '888', '0', '0');
+		> inscription 
+			> créer un user dans la base user 
+				>> INSERT INTO `users` (`id`, `username`, `mail`, `datenaissance`, `location`, `profession`, `description`, `status`, `dateinscription`) VALUES (NULL, 'mika', 'michael.claude.web@gmail.com', '20130521', 'paris', 'webdev', 'DESC', '2', CURRENT_DATE())
+
+	> Charger la liste des actions de l utilisateur 
+		> http://justdolist:8888/php/new/getUserActions.php?userId=27
+	> ajouter une action a la liste 
+		> verifier si l action existe ou non dans la liste des actions de base 
+			> si non > on l ajoute > 
+				> ajouter l action existante dans la base d'action dans la liste des actions du user 
+					> http://justdolist:8888/php/new/addUserAction.php?userId=32&actionId=1&userListId=7
+
+	> GIT > https://github.com/mistermika/justdolist ( pass > Mich*)
+
+
+> VIEUW PROJET 
+	> https://digikoder.com/0WORK/justdolist/wp-admin/ 
+		> pass : SourieVerte77 ( user : admin )
+
+> astuces techniques 
+	> raccourci visual studio 
+		> dupliquer ligne > SHIFT + ALT + FLECHE BAS 
+
+
+
+
+
+
+
+
+
+
+
+

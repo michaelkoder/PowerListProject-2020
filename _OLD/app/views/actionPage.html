@@ -1,0 +1,36 @@
+<section class="todoBackground" id="actionPage">
+	
+		<header  class="appPageHeader">
+				<a class="backBtn" href="{{rootUrl}}#/home"></a>
+				<h1>
+					Action !
+				</h1>
+		</header>
+		<header>
+			<div class="topActionHeaderDiv">
+				<h2 class="title">{{actionName}}</h2>
+				<div class="actionsBtns">
+							<img src="wp-content/themes/zerif-lite-child/app/images/star.png">
+							<img src="wp-content/themes/zerif-lite-child/app/images/cross.png">
+							<img src="wp-content/themes/zerif-lite-child/app/images/share.png">
+							<div class="roundBox">22</div>
+				</div>
+			</div>
+			<div class="topActionHeaderDiv">
+				<div class="topactionHeaderTxt1">Evènements :</div>
+				<div class="topactionHeaderTxt2">
+					Trier par 
+					<select>
+						<option>Date</option>
+						<option>Distance</option>
+						<option>Connaissances</option>
+					</select>
+				</div>
+				<a class="appBtn" href="{{rootUrl}}/evenement/create/?actionId={{actionId}}">Créer mon évènement</a>
+			</div>
+		</header>
+	
+		<div id="eventsLoadBox" onload="loaded = true" ng-include="listUrl"></div>
+		<button class="btnReadMore" ng-click="readMore()">Voir plus ...</button>
+		
+</section>
